@@ -241,14 +241,10 @@ html.dark .btn-solid { color: #0B1A3A; }
 .cv-preview { padding: 60px 0 90px; }
 .cv-card {
   background: var(--card); border-radius: 28px; box-shadow: var(--shadow);
-  border: 1px solid var(--card-border); padding: 40px; overflow: hidden;
+  border: 1px solid var(--card-border); overflow: hidden;
 }
-.cv-embed { width: 100%; height: 640px; border: none; border-radius: 12px; }
-.cv-placeholder {
-  display: flex; align-items: center; justify-content: center; min-height: 240px;
-}
-.cv-empty-msg { color: var(--ink-soft); font-size: 16px; font-weight: 600; text-align: center; }
-.cv-actions { display: flex; justify-content: center; margin-top: 24px; }
+.cv-embed { width: 100%; height: 800px; border: none; display: block; }
+.cv-actions { display: flex; justify-content: center; gap: 14px; padding: 24px; }
 
 /* ---------- Projects ---------- */
 .projects { padding: 60px 0 100px; }
