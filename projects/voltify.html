@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voltify — Detail Project · Ridho Fauzi</title>
+    <meta name="description" content="Detail project Voltify: sistem pendukung keputusan monitoring & manajemen konsumsi listrik rumah tangga berbasis web dengan Fuzzy Logic." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <div class="sky-deco" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="moon"></div>
+      <div class="stars" id="stars"></div>
+      <div class="cloud" style="top: 12%; left: 0; width: 120px; animation: driftRight 60s linear infinite;"></div>
+      <div class="cloud" style="top: 30%; left: 0; width: 100px; animation: driftLeft 54s linear infinite; animation-delay: -12s;"></div>
+      <div class="cloud" style="top: 60%; left: 0; width: 140px; animation: driftRight 68s linear infinite; animation-delay: -24s;"></div>
+    </div>
+
+    <nav>
+      <a class="brand" href="../index.html">🎈 Ridho</a>
+      <a href="../index.html#karya">Karya</a>
+      <a href="../index.html#kontak">Kontak</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Ganti tema terang/gelap" title="Ganti tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <main class="detail-wrap">
+      <a class="back-link" href="../index.html#karya">← Kembali ke Karya</a>
+
+      <div class="detail-header">
+        <span class="tagpill">Web App · Fuzzy Logic</span>
+        <h1>⚡ Voltify</h1>
+        <p class="lead">Sistem pendukung keputusan untuk monitoring &amp; manajemen konsumsi listrik rumah tangga berbasis web, menggunakan metode Fuzzy Logic.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-meta">
+          <span>👥 <strong>Tim:</strong> 3 orang (project kuliah)</span>
+          <span>🎓 <strong>Peran:</strong> Web Developer</span>
+          <span>📄 <strong>Terbit:</strong> Jurnal JATI Vol. 10 No. 2 (2026)</span>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <h2>📖 Tentang Project</h2>
+        <p>Konsumsi listrik rumah tangga terus meningkat, namun meteran konvensional hanya menampilkan total pemakaian tanpa rincian per perangkat. Hal ini menyulitkan pengguna mengidentifikasi perangkat boros energi.</p>
+        <p>Voltify hadir sebagai aplikasi web yang memanfaatkan <strong>Fuzzy Logic</strong> untuk mengklasifikasikan tingkat konsumsi energi perangkat. Pengguna memasukkan daya perangkat (Watt) dan durasi penggunaan (jam/hari), lalu sistem menghitung konsumsi energi (kWh), biaya harian, serta mengklasifikasikannya ke kategori <strong>Hemat, Normal, atau Boros</strong>.</p>
+      </div>
+
+      <div class="detail-card">
+        <h2>✨ Fitur Utama</h2>
+        <ul class="feature-list">
+          <li><strong>Klasifikasi Fuzzy Logic</strong> — menilai konsumsi perangkat jadi Hemat / Normal / Boros beserta tingkat keyakinan.</li>
+          <li><strong>Hitung kWh &amp; biaya</strong> — kalkulasi konsumsi energi dan estimasi biaya harian/bulanan.</li>
+          <li><strong>Dashboard statistik</strong> — ringkasan mingguan dengan grafik konsumsi.</li>
+          <li><strong>Estimasi biaya</strong> — proyeksi total biaya listrik.</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h2>🛠️ Teknologi</h2>
+        <div class="detail-tech">
+          <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <h2>🔗 Tautan</h2>
+        <div class="detail-links">
+          <a class="btn btn-solid" href="https://www.voltify.my.id/" target="_blank" rel="noopener">🌐 Buka Demo</a>
+          <a class="btn btn-ghost" href="https://ejournal.itn.ac.id/jati/article/view/16911" target="_blank" rel="noopener">📄 Baca Jurnal</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>Dibuat dengan ❤️ oleh Ridho Fauzi · <span id="year"></span></footer>
+
+    <script type="module" src="../src/detail.js"></script>
+  </body>
+</html>

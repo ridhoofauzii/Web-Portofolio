@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ====== SEO ====== -->
+    <title>Ridho Fauzi — Portofolio di Udara</title>
+    <meta name="description" content="Portofolio Ridho Fauzi, mahasiswa Teknik Informatika & Web Developer. Lihat skill dan cara menghubungi saya." />
+    <meta name="author" content="Ridho Fauzi" />
+    <meta property="og:title" content="Ridho Fauzi — Mahasiswa Teknik Informatika & Web Developer" />
+    <meta property="og:description" content="Portofolio Ridho Fauzi, mahasiswa Teknik Informatika & Web Developer." />
+    <meta property="og:type" content="website" />
+
+    <!-- ====== Fonts ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Elemen dekoratif langit -->
+    <div class="sky-deco" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="moon"></div>
+      <div class="stars" id="stars"></div>
+      <div class="cloud" style="top: 10%; left: 0; width: 100px; animation: driftRight 46s linear infinite;"></div>
+      <div class="cloud" style="top: 20%; left: 0; width: 150px; transform: scale(1.3); animation: driftRight 62s linear infinite; animation-delay: -10s;"></div>
+      <div class="cloud" style="top: 34%; left: 0; width: 90px; animation: driftLeft 54s linear infinite;"></div>
+      <div class="cloud" style="top: 48%; left: 0; width: 130px; animation: driftRight 70s linear infinite; animation-delay: -20s;"></div>
+      <div class="cloud" style="top: 62%; left: 0; width: 110px; transform: scale(0.9); animation: driftLeft 58s linear infinite; animation-delay: -6s;"></div>
+      <div class="cloud" style="top: 76%; left: 0; width: 140px; animation: driftRight 66s linear infinite; animation-delay: -30s;"></div>
+
+      <svg class="bird" viewBox="0 0 40 20" style="top: 16%; animation: flyRight 22s linear infinite;">
+        <path d="M0,10 Q10,0 20,10 Q30,0 40,10" />
+      </svg>
+      <svg class="bird" viewBox="0 0 40 20" style="top: 26%; animation: flyRight 30s linear infinite; animation-delay: -8s;">
+        <path d="M0,10 Q10,0 20,10 Q30,0 40,10" />
+      </svg>
+      <svg class="bird" viewBox="0 0 40 20" style="top: 42%; animation: flyRight 26s linear infinite; animation-delay: -14s;">
+        <path d="M0,10 Q10,0 20,10 Q30,0 40,10" />
+      </svg>
+    </div>
+
+    <nav>
+      <span class="brand">🎈 Ridho</span>
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#karya">Karya</a>
+      <a href="#kontak">Kontak</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Ganti tema terang/gelap" title="Ganti tema">
+        <!-- Matahari (tema terang) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <!-- Bulan (tema gelap) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="atas">
+      <div class="balloon-wrap">
+        <svg width="180" height="230" viewBox="0 0 200 260">
+          <defs>
+            <clipPath id="balloonClip">
+              <path d="M100,10 C40,10 20,90 40,140 C55,175 80,192 86,206 L114,206 C120,192 145,175 160,140 C180,90 160,10 100,10 Z" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#balloonClip)">
+            <rect x="0" y="0" width="40" height="260" fill="#FF6B5E" />
+            <rect x="40" y="0" width="40" height="260" fill="#FFC857" />
+            <rect x="80" y="0" width="40" height="260" fill="#4ECDC4" />
+            <rect x="120" y="0" width="40" height="260" fill="#FFC857" />
+            <rect x="160" y="0" width="40" height="260" fill="#FF6B5E" />
+          </g>
+          <path d="M100,10 C40,10 20,90 40,140 C55,175 80,192 86,206 L114,206 C120,192 145,175 160,140 C180,90 160,10 100,10 Z" fill="none" stroke="#1F3A4C" stroke-width="3.5" />
+          <line x1="86" y1="206" x2="80" y2="222" stroke="#1F3A4C" stroke-width="2.5" />
+          <line x1="114" y1="206" x2="120" y2="222" stroke="#1F3A4C" stroke-width="2.5" />
+          <line x1="92" y1="206" x2="86" y2="222" stroke="#1F3A4C" stroke-width="2" />
+          <line x1="108" y1="206" x2="114" y2="222" stroke="#1F3A4C" stroke-width="2" />
+          <rect x="78" y="220" width="44" height="32" rx="7" fill="#B98254" stroke="#1F3A4C" stroke-width="3" />
+        </svg>
+      </div>
+      <span class="eyebrow">Portofolio · Melayang sejak hari ini</span>
+      <h1>Halo, aku <span class="accent">Ridho Fauzi</span> 👋<br />senang bikin web<br />yang melayang tinggi.</h1>
+      <p class="tagline">Mahasiswa Teknik Informatika &amp; Web Developer. Suka membangun antarmuka web yang fungsional dan responsif dengan HTML, CSS, JavaScript, dan React sambil terus belajar teknologi baru.</p>
+      <div class="cta-row">
+        <a href="#tentang" class="btn btn-solid">Tentang Aku 🎈</a>
+        <!-- GANTI: taruh CV di public/resume.pdf -->
+        <a href="/resume.pdf" download class="btn btn-ghost">Download CV ✈️</a>
+      </div>
+      <div class="scroll-hint">gulir ke bawah, kita terbang lebih jauh <span>↓</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="tentang">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">☁️ Kenalan Dulu Yuk</span>
+          <h2>Sedikit tentang aku</h2>
+        </div>
+        <div class="about-card">
+          <!-- GANTI foto: public/images/profile.jpg -->
+          <img class="avatar-photo" src="/images/profile.jpg?v=2" alt="Foto profil Ridho Fauzi" width="190" height="190" />
+          <div>
+            <p><strong>Halo! Nama saya Ridho Fauzi</strong>, seorang mahasiswa Teknik Informatika yang memiliki minat dalam pengembangan aplikasi web. Berpengalaman mengembangkan berbagai proyek menggunakan HTML, CSS, JavaScript, dan React.</p>
+            <p>Saya senang mempelajari teknologi baru, menyelesaikan tantangan pemrograman, dan terus mengembangkan keterampilan dalam membangun aplikasi yang fungsional dan responsif.</p>
+            <div class="about-tags">
+              <a class="about-tag" href="https://instagram.com/ridhofauziiii_" target="_blank" rel="noopener">📷 @ridhofauziiii_</a>
+              <span class="about-tag">📍 Bekasi, Jawa Barat</span>
+              <span class="about-tag">🎓 Mahasiswa Teknik Informatika</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skill">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">🪁 Yang Bikin Aku Terbang</span>
+          <h2>Skill &amp; alat andalan</h2>
+        </div>
+        <!-- Skill dirender otomatis dari main.js (edit daftar skill di sana) -->
+        <div id="skills-wrap"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (disembunyikan sementara — tampilkan catatan "segera") -->
+    <section class="projects" id="karya">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">🎈 Yang Pernah Diterbangkan</span>
+          <h2>Karya pilihan</h2>
+        </div>
+
+        <div class="float-grid">
+          <div class="float-card">
+            <span class="tagpill">Web App · Fuzzy Logic</span>
+            <h3>⚡ Voltify — Monitoring &amp; Manajemen Listrik Rumah</h3>
+            <p>Sistem pendukung keputusan berbasis web yang memakai metode Fuzzy Logic untuk mengklasifikasikan konsumsi energi perangkat rumah tangga (Hemat / Normal / Boros). Menghitung kWh, biaya harian, serta menampilkan dashboard statistik dan grafik konsumsi.</p>
+            <div class="proj-tech">
+              <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="proj-links">
+              <a class="go" href="projects/voltify.html">🔍 Detail →</a>
+              <a class="go" href="https://www.voltify.my.id/" target="_blank" rel="noopener">🌐 Demo →</a>
+              <a class="go" href="https://ejournal.itn.ac.id/jati/article/view/16911" target="_blank" rel="noopener">📄 Jurnal →</a>
+            </div>
+          </div>
+          <div class="float-card">
+            <span class="tagpill">Mobile App · AI</span>
+            <h3>🍜 Tabemono — Aplikasi Resep Makanan</h3>
+            <p>Aplikasi resep makanan berbasis Android dengan fitur AI recommendation. Pengguna bisa melihat feed resep, menambah &amp; berbagi resep, memberi like, dan mendapat saran resep dari AI berdasarkan bahan yang tersedia.</p>
+            <div class="proj-tech">
+              <span>Kotlin</span><span>Android SDK</span><span>Firebase</span><span>AI/ML</span><span>REST API</span>
+            </div>
+            <div class="proj-links">
+              <a class="go" href="projects/tabemono.html">🔍 Lihat detail →</a>
+              <a class="go" href="https://github.com/alvinalfandy/TabemonoApp" target="_blank" rel="noopener">💻 GitHub →</a>
+            </div>
+          </div>
+          <div class="float-card">
+            <span class="tagpill">Web App · Event Management</span>
+            <h3>🎟️ Bikin Event — Manajemen Event &amp; Sertifikat</h3>
+            <p>Sistem manajemen event dan sertifikat digital berbasis web. Admin bisa mengelola event, peserta, dan analytics real-time, plus generator sertifikat otomatis. Peserta dapat mendaftar event dan mengunduh sertifikat digital PDF.</p>
+            <div class="proj-tech">
+              <span>CodeIgniter 4</span><span>PHP</span><span>MySQL</span><span>Bootstrap 5</span><span>TCPDF</span><span>Chart.js</span>
+            </div>
+            <div class="proj-links">
+              <a class="go" href="projects/bikinevent.html">🔍 Lihat detail →</a>
+              <a class="go" href="https://github.com/alvinalfandy/bikinevent" target="_blank" rel="noopener">💻 GitHub →</a>
+            </div>
+          </div>
+          <!-- Project magang: EcoSky (UI Designer, anggota tim) -->
+          <div class="float-card">
+            <span class="tagpill">Magang · UI Design</span>
+            <h3>🌱 EcoSky — Climate-Tech Platform</h3>
+            <p>Platform circular economy yang mengubah minyak jelantah (UCO) menjadi bahan bakar aviasi berkelanjutan (SAF). Saat magang, saya bergabung sebagai anggota tim UI dan fokus mengerjakan desain antarmuka website.</p>
+            <div class="proj-tech">
+              <span>Figma</span><span>UI Design</span><span>Web Design</span>
+            </div>
+            <div class="proj-links">
+              <a class="go" href="projects/ecosky.html">🔍 Lihat detail →</a>
+              <a class="go" href="https://ecosky.id/" target="_blank" rel="noopener">🌐 Website →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="kontak">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow">✈️ Kirim Sinyal</span>
+          <h2>Yuk ngobrol!</h2>
+        </div>
+        <div class="contact-card">
+          <!--
+            CATATAN: Form belum kirim email (tampilan saja).
+            Untuk mengaktifkan: daftar gratis di https://formspree.io,
+            lalu tambahkan action="https://formspree.io/f/XXXX" method="POST"
+            pada <form> dan hapus id/handler di main.js bila perlu.
+          -->
+          <form id="contactForm">
+            <div class="field">
+              <label for="nama">Nama kamu</label>
+              <input id="nama" type="text" placeholder="Siapa nih?" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="kamu@email.com" required />
+            </div>
+            <div class="field">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" placeholder="Ceritain ide atau proyek kamu..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-solid send-btn">Kirim Pesan <span id="planeIcon">✈️</span></button>
+          </form>
+          <div class="toast" id="toast">Pesan kamu sedang terbang menujuku! 🎈 Aku balas secepatnya ya.</div>
+        </div>
+        <div class="socials">
+          <!-- Email -->
+          <a class="social-balloon" href="mailto:ridhofauzimuslim@gmail.com" title="Email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-10 6L2 7"></path>
+            </svg>
+          </a>
+          <!-- GitHub -->
+          <a class="social-balloon" href="https://github.com/ridhoofauzii" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"></path>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a class="social-balloon" href="https://instagram.com/ridhofauziiii_" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- WhatsApp: GANTI 62XXXXXXXXXXX dengan nomormu (format 62 tanpa 0) -->
+          <a class="social-balloon" href="https://wa.me/62XXXXXXXXXXX" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.65.15-.19.28-.74.94-.9 1.13-.17.19-.34.21-.63.07-.3-.15-1.25-.46-2.4-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.29-.02-.45.13-.6.13-.13.3-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49h-.56c-.19 0-.51.07-.77.36-.26.29-1.01.99-1.01 2.41 0 1.42 1.04 2.79 1.18 2.98.14.19 2.03 3.1 4.92 4.35.69.3 1.22.47 1.64.6.69.22 1.32.19 1.81.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34ZM12 2a10 10 0 0 0-8.6 15.05L2 22l5.05-1.32A10 10 0 1 0 12 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3 .78.8-2.92-.19-.3A8.1 8.1 0 1 1 12 20.1Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>Dibuat dengan ❤️ oleh Ridho Fauzi · <span id="year"></span></footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
