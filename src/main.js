@@ -145,23 +145,7 @@ form?.addEventListener('submit', (e) => {
 })
 
 // =============================================================
-//  3. PRATINJAU CV — tampilkan embed jika PDF tersedia
-// =============================================================
-const cvEmbed = document.getElementById('cvEmbed')
-const cvPlaceholder = document.querySelector('.cv-placeholder')
-
-if (cvEmbed && cvPlaceholder) {
-  cvEmbed.addEventListener('load', () => {
-    cvEmbed.style.display = 'block'
-    cvPlaceholder.style.display = 'none'
-  })
-  cvEmbed.addEventListener('error', () => {
-    cvPlaceholder.style.display = 'flex'
-  })
-}
-
-// =============================================================
-//  4. TAHUN OTOMATIS DI FOOTER
+//  3. TAHUN OTOMATIS DI FOOTER
 // =============================================================
 const yearEl = document.getElementById('year')
 if (yearEl) yearEl.textContent = new Date().getFullYear()
