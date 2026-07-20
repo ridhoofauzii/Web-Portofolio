@@ -76,7 +76,7 @@ const CDN = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons'
 
 const skillGroups = [
   {
-    title: '🎨 Frontend',
+    title: 'Frontend',
     items: [
       { name: 'HTML', logo: `${CDN}/html5/html5-original.svg` },
       { name: 'CSS', logo: `${CDN}/css3/css3-original.svg` },
@@ -89,7 +89,7 @@ const skillGroups = [
     ],
   },
   {
-    title: '🗄️ Backend & Database',
+    title: 'Backend & Database',
     items: [
       { name: 'PHP', logo: `${CDN}/php/php-original.svg` },
       { name: 'Node.js', logo: `${CDN}/nodejs/nodejs-original.svg` },
@@ -129,31 +129,17 @@ if (skillsWrap) {
 }
 
 // =============================================================
-//  2. FORM KONTAK (animasi pesawat kertas terbang)
+//  2. FORM KONTAK
 //  Belum kirim email. Lihat catatan di index.html untuk Formspree.
 // =============================================================
 const form = document.getElementById('contactForm')
 const toast = document.getElementById('toast')
-const plane = document.getElementById('planeIcon')
 
 form?.addEventListener('submit', (e) => {
   e.preventDefault()
-  if (plane) {
-    plane.style.transition = 'transform .8s ease, opacity .8s ease'
-    plane.style.transform = 'translate(60px,-40px) rotate(25deg)'
-    plane.style.opacity = '0'
-  }
   toast?.classList.add('show')
-
   setTimeout(() => {
     form.reset()
-    if (plane) {
-      plane.style.transition = 'none'
-      plane.style.transform = 'translate(0,0) rotate(0deg)'
-      plane.style.opacity = '1'
-      void plane.offsetWidth // paksa reflow
-      plane.style.transition = 'transform .8s ease, opacity .8s ease'
-    }
     setTimeout(() => toast?.classList.remove('show'), 2600)
   }, 1400)
 })
